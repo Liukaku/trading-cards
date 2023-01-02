@@ -2,7 +2,8 @@ import React from "react";
 
 const Rect = () => {
   const hoverFunc = (e: React.PointerEvent<HTMLDivElement>) => {
-    const rect = e.target.getBoundingClientRect();
+    const targ = e.target as HTMLElement;
+    const rect = targ.getBoundingClientRect();
     // console.log(Math.floor(e.clientX - rect.left));
     // console.log(Math.floor(e.clientY - rect.top));
     const what = document.getElementById("rect");
