@@ -41,7 +41,6 @@ const Rect = () => {
     if (what != null) {
       what.style.transition = "";
       what.style.transform = `rotateY(${minus()}deg) rotateX(${roundedX}deg)`;
-      what.style.transform = ``;
     }
   };
 
@@ -49,7 +48,7 @@ const Rect = () => {
     const what = document.getElementById("rect");
     if (what != null) {
       what.style.transition = "ease-in-out 1s";
-      //   what.style.transform = "";
+      what.style.transform = "";
     }
   };
 
