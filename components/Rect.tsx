@@ -41,8 +41,7 @@ const Rect = () => {
     if (what != null) {
       what.style.transition = "";
       what.style.transform = `rotateY(${minus()}deg) rotateX(${roundedX}deg)`;
-      //   what.style.transform = `rotateY(${rotateY}deg) rotateX(30deg)`;
-      //   what.style.transform = ``;
+      what.style.transform = ``;
     }
   };
 
