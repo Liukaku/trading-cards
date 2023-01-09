@@ -29,9 +29,6 @@ const Rect = () => {
         return -roundedY;
       }
     };
-    const rounded = {
-      x: Math.floor(-(center.x / 3.5)),
-    };
     if (what != null) {
       what.style.transition = "";
       what.style.transform = `rotateY(${minus()}deg) rotateX(${roundedX}deg)`;
