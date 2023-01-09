@@ -39,6 +39,7 @@ const Rect = () => {
     const what = document.getElementById("rect");
     if (what != null) {
       what.style.transition = "ease-in-out 1s";
+      // what.style.boxShadow = "0 0 30px -5px";
       what.style.transform = "";
     }
   };
@@ -55,7 +56,34 @@ const Rect = () => {
         backgroundPosition: "center",
         backgroundSize: "cover",
       }}
-    ></div>
+    >
+      <img
+        src="https://i.imgur.com/pIEEBcZ.jpeg"
+        style={{
+          width: "100%",
+          display: "block",
+          position: "absolute",
+          objectFit: "cover",
+          height: "100%",
+        }}
+      />
+      <div
+        style={{
+          backgroundImage:
+            "url(https://poke-holo.simey.me/img/illusion.png), linear-gradient(#ff7575eb 33%, #f9f996c4 66%, #7fd77fc9 100%)",
+          backgroundBlendMode: "exclusion, hue, hard-light",
+          filter:
+            "brightness(calc((var(--hyp)*0.3) + 0.5)) contrast(2) saturate(1.5)",
+          width: "300px",
+          height: "400px",
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          zIndex: 1,
+          position: "absolute",
+          mixBlendMode: "color-dodge",
+        }}
+      ></div>
+    </div>
   );
 };
 
