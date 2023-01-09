@@ -4,13 +4,7 @@ const Rect = () => {
   const hoverFunc = (e: React.PointerEvent<HTMLDivElement>) => {
     const targ = e.target as HTMLElement;
     const rect = targ.getBoundingClientRect();
-    // console.log(Math.floor(e.clientX - rect.left));
-    // console.log(Math.floor(e.clientY - rect.top));
     const what = document.getElementById("rect");
-    // const rectHeight = e.target.clientHeight;
-    // const rectWidth = e.target.clientWidth;
-    // const rotateY = (e.clientX - rect.left - rectWidth / 2) / 3;
-    // const rotateX = (e.clientY - rect.top - rectHeight / 2.5) / 3;
 
     const absolute = {
       x: e.clientX - rect.left, // get mouse position from left
